@@ -19,6 +19,9 @@
 		AB0336C9199AD80D0037A0E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0336B1199AD80D0037A0E7 /* UIKit.framework */; };
 		AB0336D1199AD80D0037A0E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB0336CF199AD80D0037A0E7 /* InfoPlist.strings */; };
 		AB0336D3199AD80D0037A0E7 /* pr_SerializeToJSONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0336D2199AD80D0037A0E7 /* pr_SerializeToJSONTests.m */; };
+		AB0336DD199AD8660037A0E7 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0336DC199AD8660037A0E7 /* main.storyboard */; };
+		AB0336E0199ADDA00037A0E7 /* PRSerializeToJSONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0336DF199ADDA00037A0E7 /* PRSerializeToJSONViewController.m */; };
+		AB0336E4199ADEDE0037A0E7 /* PRProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0336E3199ADEDE0037A0E7 /* PRProfile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		AB0336CE199AD80D0037A0E7 /* pr_SerializeToJSONTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pr_SerializeToJSONTests-Info.plist"; sourceTree = "<group>"; };
 		AB0336D0199AD80D0037A0E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB0336D2199AD80D0037A0E7 /* pr_SerializeToJSONTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pr_SerializeToJSONTests.m; sourceTree = "<group>"; };
+		AB0336DC199AD8660037A0E7 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		AB0336DE199ADDA00037A0E7 /* PRSerializeToJSONViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRSerializeToJSONViewController.h; sourceTree = "<group>"; };
+		AB0336DF199ADDA00037A0E7 /* PRSerializeToJSONViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRSerializeToJSONViewController.m; sourceTree = "<group>"; };
+		AB0336E2199ADEDE0037A0E7 /* PRProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRProfile.h; sourceTree = "<group>"; };
+		AB0336E3199ADEDE0037A0E7 /* PRProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRProfile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +115,13 @@
 		AB0336B3199AD80D0037A0E7 /* pr_SerializeToJSON */ = {
 			isa = PBXGroup;
 			children = (
+				AB0336DC199AD8660037A0E7 /* main.storyboard */,
+				AB0336DE199ADDA00037A0E7 /* PRSerializeToJSONViewController.h */,
+				AB0336DF199ADDA00037A0E7 /* PRSerializeToJSONViewController.m */,
 				AB0336BC199AD80D0037A0E7 /* PRAppDelegate.h */,
 				AB0336BD199AD80D0037A0E7 /* PRAppDelegate.m */,
 				AB0336BF199AD80D0037A0E7 /* Images.xcassets */,
+				AB0336E1199ADE990037A0E7 /* Models */,
 				AB0336B4199AD80D0037A0E7 /* Supporting Files */,
 			);
 			path = pr_SerializeToJSON;
@@ -142,6 +154,15 @@
 				AB0336CF199AD80D0037A0E7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB0336E1199ADE990037A0E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB0336E2199ADEDE0037A0E7 /* PRProfile.h */,
+				AB0336E3199ADEDE0037A0E7 /* PRProfile.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB0336B8199AD80D0037A0E7 /* InfoPlist.strings in Resources */,
+				AB0336DD199AD8660037A0E7 /* main.storyboard in Resources */,
 				AB0336C0199AD80D0037A0E7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0336E0199ADDA00037A0E7 /* PRSerializeToJSONViewController.m in Sources */,
+				AB0336E4199ADEDE0037A0E7 /* PRProfile.m in Sources */,
 				AB0336BE199AD80D0037A0E7 /* PRAppDelegate.m in Sources */,
 				AB0336BA199AD80D0037A0E7 /* main.m in Sources */,
 			);
